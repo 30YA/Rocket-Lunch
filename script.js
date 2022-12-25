@@ -14,7 +14,7 @@ const rocketlunch = () => {
       if (lunchCounter <= 0) {
           clearInterval(timer);
           fires.forEach((item) => (item.style.display = "block"));
-          setTimeout(() => rocket.classList.add("fly"), 2000);
+          rocket.classList.add("fly")
           document.querySelector(".Abort").style.display = "none";
           creatElement("button", "reset", "reset", left);
           document.querySelector(".reset").addEventListener("click",resetProject)
